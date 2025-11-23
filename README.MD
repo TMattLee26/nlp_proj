@@ -1,17 +1,19 @@
 # Data Files:
- r_news_2018.jsonl - All Reddit Posts from r/news in 2018
- All the News DataSet - https://www.kaggle.com/datasets/davidmckinley/all-the-news-dataset/data
+* r_news_2018.jsonl - All Reddit Posts from r/news in 2018
+* All the News DataSet - https://www.kaggle.com/datasets/davidmckinley/all-the-news-dataset/data
 
  # Install and Use the Conda Enviornment
 conda env create -f nlp_proj.yml
 
 # Run Data Fetcher in Background
+```
 tmux
 conda activate nlp_proj
 <CMD to Run>
 CTRL+B | d # Detaches tmux session but leaves cmd running
 tmux list-sessions # Shows detached session
 tmux attach <Session Number> # Reattaches session to see cmd status
+```
 
 # Next Steps
 - Cluster Reddit Posts w/ News Articles based on Word2Vec of Article Names
